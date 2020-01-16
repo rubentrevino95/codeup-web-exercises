@@ -1,4 +1,53 @@
 .fancy-header {
     color: purple;
     text-decoration: underline;
+    text-align: center;
+}
+h2 {
+    color: firebrick;
+    text-decoration: underline;
+    font-family: 'Cabin', sans-serif;
+}
+body {
+    background: antiquewhite;
+    background-image: url(../img/office.jpg.);
+    background-repeat: round;
+    background-size: cover;
+}
+body::after{
+    content: "";
+    background: url(../img/office.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+}
+ol {
+    list-style: upper-alpha;
+}
+ul {
+    list-style: square;
+}
+td, tr {
+    font-size: 24px;
+    font-family: "Comic Sans MS";
+}
+a:link {
+    color: blue;
+}
+a:visited {
+    color: blueviolet;
+}
+a:hover {
+    color: aqua;
+}
+a:active {
+    color: darkorange;
+}
+* {
+    font-family: 'Cabin', sans-serif;
 }
