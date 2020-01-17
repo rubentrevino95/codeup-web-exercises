@@ -12,7 +12,8 @@ body {
     background: antiquewhite;
     background-image: url(../img/office.jpg.);
     background-repeat: round;
-    background-size: cover;
+    background-size: 240px;
+    background-position: bottom;
 }
 body::after{
     content: "";
@@ -34,7 +35,7 @@ ul {
 }
 td, tr {
     font-size: 24px;
-    font-family: "Comic Sans MS";
+    font-family: "Helvetica Neue";
 }
 a:link {
     color: blue;
