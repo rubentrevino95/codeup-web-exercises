@@ -51,3 +51,6 @@ a:active {
 * {
     font-family: 'Cabin', sans-serif;
 }
+p {
+    text-indent: 40px;
+}
