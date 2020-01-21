@@ -12,7 +12,7 @@ body, html {
 
 form {
     /* This form should be separated from other elements by 1em */
-    margin: 1em;
+    border: 1em;
 
     /* There must be 1em between the content and the border of this element */
     padding: 1em;
@@ -42,6 +42,7 @@ fieldset {
     width: 100%;
     /* It should have a separation of .5em from elements on top of it and below it*/
     padding: .5em .5em;
+    margin: .5em auto;
 }
 
 .form-label {
@@ -62,7 +63,7 @@ fieldset {
     padding: 8px;
     color: white;
     font-weight: bold;
-    border: 1px lightgrey;
+    border: 1px lightgrey solid;
 }
 
 .form-control {
@@ -73,10 +74,10 @@ fieldset {
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Calculate based on the padding of the `.btn` class */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
-    width: calc(100% - 8px);
-    padding-top: 4px;
-    padding-bottom: 4px;
-    margin: .5em .5em;
+    width: calc(100% - 9px);
+    padding: 4px 0;
+    margin: .5em 0;
+    box-sizing: border-box;
 }
 
 
