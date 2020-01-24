@@ -1,0 +1,56 @@
+body {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 20em;
+    background: whitesmoke;
+    width: 100em;
+    display: grid;
+    height: 75em;
+    grid-gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+div {
+    padding: 1.2em;
+    background: gold;
+}
+#box1 {
+    grid-area: one;
+    grid-area: 1/ 1/ 1/ 5;
+}
+#box2 {
+    grid-area: two;
+    grid-area: 2/ 1/ 6/ 2;
+}
+#box3 {
+    grid-area: three;
+    grid-area: 2/ 2/ 3/ 3;
+}
+#box4 {
+    grid-area: four;
+    grid-area: 2/ 3/ 3/ 5;
+}
+#box5 {
+    grid-area: five;
+    grid-area: 3/ 2/ 4/ 4;
+}
+#box6 {
+    grid-area: six;
+    grid-area: 3/ 4/ 4/ 5;
+}
+#box7 {
+    grid-area: seven;
+    grid-area: 4/ 2/ 5/ 3;
+}
+#box8 {
+    grid-area: eight;
+    grid-area: 4/ 3/ 5/ 4;
+}
+#box9 {
+    grid-area: nine;
+    grid-area: 4/ 4/ 5/ 5;
+}
+#box10 {
+    grid-area: ten;
+    grid-area: 5/ 2/ 6/ 5;
+}

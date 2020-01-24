@@ -1,0 +1,36 @@
+body {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 20em;
+    background: whitesmoke;
+    width: 100em;
+    display: grid;
+    height: 75em;
+    grid-gap: 10px;
+    grid-template-rows: 80px 1fr 70px;
+    grid-template-columns: 20% 1fr 15%;
+}
+div {
+    padding: 1.2em;
+    background: gold;
+}
+#mainHeader {
+    grid-area: head;
+    grid-area: 1/ 1/ 1/ 6;
+}
+#mainNav {
+    grid-area: nav;
+    grid-area: 2/ 1/ 6/ -3;
+}
+#mainArticle {
+    grid-area: article;
+    grid-area: 2/ 2/ 5/ -1;
+}
+#mainAds {
+    grid-area: ads;
+    grid-area: 2/ 4/ 5/ 6;
+}
+#mainFooter {
+    grid-area: foot;
+    grid-area: 5/ 2/ 6/ 6;
+}
