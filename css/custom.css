@@ -1,8 +1,17 @@
 .jumbotron h1 {
-        display: flex;
-        justify-content: center;
+        /*display: flex;*/
+        /*justify-content: center;*/
     }
 .main-list-header {
     background: dodgerblue;
     color: white;
+}
+h1 {
+    background: rgb(253, 255, 255);
+    opacity: 0.6;
+    text-align: center;
+}
+.step-btn {
+    display: flex;
+    justify-content: flex-end;
 }
