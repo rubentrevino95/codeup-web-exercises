@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Pizza World</title>
+    <style>
+            .jumbotron {
+                background-image: url("img/pizza.png");
+                background-size: cover;
+                background-position: center;
+                height: 25vh;
+            }
+
+            .display-4 {
+                color: white;
+            }
+
+            .embed-responsive {
+                object-fit: cover;
+            }
+
+    </style>
+</head>
+<body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!--Beginning of NavBar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Pizza World</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Order online <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li>
+                <form class="form-inline my-0 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search stores near you!</button>
+                </form>
+            </li>
+        </ul>
+        <div class="nav-item">
+            <a class="nav-link" href="#">Sign up</a>
+        </div>
+    </div>
+</nav>
+<!--End of NavBar-->
+
+<!--Beginning of jumbotron-->
+    <div class="jumbotron jumbotron-fluid bg-transparent d-none d-sm-block">
+        <div class="container embed-responsive ">
+            <h1 class="display-4 text-dark">Welcome to Pizza World!</h1>
+        </div>
+    </div>
+<!--end of jumbotron-->
+<h2>Buid your own pizza!</h2>
+<!--beginning of nav-tabs-->
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">
+            <span class="badge badge-pill badge-dark">1</span>Size and crust
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <span class="badge badge-pill badge-dark">2</span>Cheese and sauce
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#"><span class="badge badge-pill badge-dark">3</span>Toppings
+        </a>
+    </li>
+</ul>
+<!--end of nav-tabs-->
+<div class="card" style="width: 100%;">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item main-list-header">Choose size and crust</li>
+<!--first card within a card-->
+        <li class="list-group-item">
+            <div class="card" style="width: 100%;">
+            <div class="card-header">
+                Hand Tossed
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.</li>
+                <li class="list-group-item">
+                    <input type="radio" name="size" id="small" value="small">
+                    <label for="small">Small (10")</label>
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="size" id="medium" value="medium">
+                    <label for="medium">Medium (12")</label>
+                </li>
+            </ul>
+        </div>
+<!--end of first card within card-->
+        </li>
+<!--start of second card within card-->
+        <li class="list-group-item">
+            <div class="card" style="width: 100%;">
+            <div class="card-header">
+                Crispy Thin
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Thin enough for optimum crispy to crunchy radio.</li>
+                <li class="list-group-item">
+                    <input type="radio" name="size" id="medium" value="medium">
+                    <label for="medium">Medium (12")</label>
+                </li>
+                <li class="list-group-item">
+                    <input type="radio" name="size" id="large" value="large">
+                    <label for="large">Large (14")</label>
+                </li>
+            </ul>
+        </div>
+<!--end of second card within card-->
+        </li>
+    </ul>
+</div>
+<p class="text-right"><button type="button" class="btn btn-primary">Next Step</button></p>
+</div>
+<!--beginning of second panel-->
+    <div class="card" style="width: 100%;">
+        <div class="card-header main-list-header">
+            Choose cheese and sauce
+        </div>
+        <ul class="list-group list-group-flush">
+<!--Beginning of first card within second card-->
+            <li class="list-group-item">
+                <div class="card" style="width: 100%;">
+                <div class="card-header">
+                    Cheese
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">How Much?</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Light</option>
+                                    <option>Normal</option>
+                                    <option>Extra</option>
+                                    <option>Double</option>
+                                </select>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                </div>
+            </li>
+<!--End of first card within second card-->
+<!--Start of second card within second card-->
+            <li class="list-group-item">
+                <div class="card" style="width: 100%;">
+                <div class="card-header">
+                    Sauce
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="form-group">
+                        <label for="exampleFormControlSelect1">What Type?</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Tomato sauce</option>
+                            <option>Marinara sauce</option>
+                            <option>BBQ sauce</option>
+                            <option>Alfredo sauce</option>
+                        </select>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">How Much?</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Light</option>
+                                <option>Normal</option>
+                                <option>Extra</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </li>
+<!--End of second card within second card-->
+        </ul>
+    </div>
+</div>
+<p class="text-right"><button type="button" class="btn btn-primary">Next Step</button></p>
+</body>
+</html>

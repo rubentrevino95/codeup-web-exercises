@@ -1,0 +1,8 @@
+.jumbotron h1 {
+        display: flex;
+        justify-content: center;
+    }
+.main-list-header {
+    background: dodgerblue;
+    color: white;
+}
