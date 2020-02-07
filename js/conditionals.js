@@ -40,6 +40,11 @@ if(numEntered === isNaN) {
 
 }
 
+//functions//
+
+function ifaNum(input) {
+    return !isNaN(input);
+}
 function numberEven(numEntered) {
     if(numEntered % 2 === 0) {
        return alert("The number is even");
@@ -52,10 +57,10 @@ function numPlus100(numEntered) {
 }
 
 function posOrNeg(numEntered) {
-    if (numEntered % 2 === 0) {
-        return alert("The number is even");
+    if (numEntered > 0) {
+        return alert("The number is positive");
     } else {
-        return alert("The number is odd");
+        return alert("The number is negative");
     }
         }
 /* ########################################################################## */
@@ -77,7 +82,7 @@ function posOrNeg(numEntered) {
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-var color = "red";
+// var color = "red";
 function analyzeColor(color) {
     if(color === 'blue') {
         return console.log('blue is the color of the sky');
@@ -108,8 +113,8 @@ function colorRanomizer(randomColor) {
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
-function randomizer(randomColor) {
-    switch (randomColor) {
+function randomizer(color) {
+    switch (color) {
         case 'red':
             alert('the color is red');
             break;
@@ -134,7 +139,7 @@ function randomizer(randomColor) {
         default:
             alert('dont know that color');
     }
-    return randomColor;
+    return color;
 }
 /**
  * TODO:
