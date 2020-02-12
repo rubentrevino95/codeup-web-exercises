@@ -1,10 +1,10 @@
 // 1. create loop that squares output.
 
-// var i = 2;
-// while (i <= 65536) {
-//     console.log(i);
-//     i*=2;
-// };
+var i = 2;
+while (i <= 65536) {
+    console.log(i);
+    i*=2;
+};
 //------------------------
 // 2. ice cream while loop.
 
