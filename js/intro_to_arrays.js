@@ -192,7 +192,6 @@ daysOfTheWeek.forEach(function(day) {
 
 // TODO: Using a for each loop, iterate through the favoriteFoods array and console.log each favorite food
 
-
 favoriteFoods.forEach(function (food) {
     console.log(food);
 });
