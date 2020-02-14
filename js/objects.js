@@ -151,5 +151,5 @@
      */
 
         // book object with title and author
-    }
+
 })();
