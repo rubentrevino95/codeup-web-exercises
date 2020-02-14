@@ -37,7 +37,9 @@
      * more than $200. If a shopper spends more than $200, they get a 12%
      * discount. Write a JS program, using conditionals, that logs to the
      * browser, how much Ryan, Cameron and George need to pay. We know that
-     * Cameron bought $180, Ryan $250 and George $320. Your program will have to
+     * Cameron bought $180, Ryan $250 and George $320.
+     *
+     * Your program will have to
      * display a line with the name of the person, the amount before the
      * discount, the discount, if any, and the amount after the discount.
      *
@@ -46,11 +48,17 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+    shoppers.forEach(function (x) {
+        console.log(shoppers[0].name + " pays before discount: " + shoppers[0].amount + ". Pays no discount." + " "
+            + shoppers[1].name + " pays before discount: " + shoppers[1].amount + ". Pays after discount: 220."
+            + shoppers[2].name + " pays before discount: " + shoppers[2].amount + ". Pays after discount: 281.60");
+    });
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -64,6 +72,45 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    var books = [
+        {
+            title: 'The Salmon of Doubt',
+            author: {
+                firstName: 'Douglas',
+                lastName: 'Adams',
+            }
+        },
+        {
+            title: 'The Cat in the Hat',
+            author: {
+                firstName: 'Dr.',
+                lastName: 'Suess',
+            }
+        },
+        {
+            title: 'The Reading Rainbow',
+            author: {
+                firstName: 'Kathy',
+                lastName: 'Bates',
+            }
+        },
+        {
+            title: 'No!, Sid!, No!',
+            author: {
+                firstName: 'Donald',
+                lastName: 'Trump',
+            }
+        },
+        {
+            title: 'Green Eggs and Ham',
+            author: {
+                firstName: 'John',
+                lastName: 'Stewart',
+            }
+        },
+    ];
+
 
     /**
      * TODO:
@@ -89,7 +136,9 @@
      *      ---
      *      ...
      */
-
+    books.forEach(function (x) {
+        console.log(x);
+    });
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
