@@ -150,4 +150,6 @@
      *   `showBookInfo` function.
      */
 
+        // book object with title and author
+    }
 })();
