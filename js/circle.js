@@ -17,7 +17,7 @@
 
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
-var area;
+            var area;
             if(doRounding) {
                 area = Math.round(this.getArea());
             } else {
