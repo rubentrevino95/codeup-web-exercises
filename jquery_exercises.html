@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Curriculum Code Sample</title>
+    <script src="js/jquery-2.2.4.js"></script>
+    <link rel="stylesheet" href="css/animations-template.css">
+</head>
+<body>
+
+<h1>Example Page</h1>
+<div class="important headShake">
+    <h3>NOTICE</h3>
+    <p id="p-style2">This is an important message!</p>
+</div>
+<div class="not-important slideInRight">
+    <h2>Lorem Ipsum</h2>
+    <p id="p-style">Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.</p>
+</div>
+<p class="important">This is also very important.</p>
+
+<!-- INSERT HTML CODE SAMPLE HERE -->
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        alert( 'The DOM has finished loading!' );
+    });
+
+    var contents = $('#p-style2').html();
+    // alert(contents);
+
+    $('.important').css('background-color', 'lightgreen');
+
+    $('h1, p').css('color', 'blue');
+
+    var classContent = $('.important').html();
+    // alert(classContent);
+
+    $('*').css('border', '1px solid black');
+
+    $('p').css('font-size', '20px');
+
+    var showHeading = $('h1').html();
+    alert(showHeading);
+
+</script>
+</body>
