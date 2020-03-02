@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery_faq</title>
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+    </style>
+    <script src="js/jquery-2.2.4.js"></script>
+</head>
+<body>
+<h1>jQuery faq Exercise</h1>
+    <dl>
+        <dt>How big are national parks?</dt>
+        <dd class="invisible">Really big.</dd>
+        <br>
+        <dt>Whats the weather like?</dt>
+        <dd class="invisible">Depends on your region.</dd>
+        <br>
+        <dt>Which is the best park?</dt>
+        <dd class="invisible">Yellowstone.</dd>
+        <br>
+        <dt>What is there to do?</dt>
+        <dd class="invisible">Hiking.</dd>
+        <br>
+        <dt>Is photography allowed?</dt>
+        <dd class="invisible">Yes, it is allowed.</dd>
+        <br>
+        <dt>Is there a tour available?</dt>
+        <dd class="invisible">See your nearest park office.</dd>
+        <br>
+        <dt>Are you allowed to go near the animals?</dt>
+        <dd class="invisible">It is not recommended.</dd>
+        <br>
+        <dt>Can you find aliens?</dt>
+        <dd class="invisible">Only if you look hard enough.</dd>
+        <br>
+        <dt>Can you get lost?</dt>
+        <dd class="invisible">Yes, bring a map.</dd>
+        <br>
+        <dt>Where can I get more information?</dt>
+        <dd class="invisible">At your nearest park office.</dd>
+    </dl>
+<a href="#" class="link-toggle">Click here</a>
+<script>
+
+    $('.link-toggle').click(function (event) {
+        event.preventDefault();
+        $('dd').toggleClass('invisible');
+    });
+
+</script>
+</body>
+</html>
