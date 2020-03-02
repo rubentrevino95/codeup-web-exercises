@@ -12,6 +12,7 @@
 </head>
 <body>
 <h1>jQuery faq Exercise</h1>
+<a href="#" class="link-toggle">Click here for answers</a>
     <dl>
         <dt>How big are national parks?</dt>
         <dd class="invisible">Really big.</dd>
@@ -43,12 +44,15 @@
         <dt>Where can I get more information?</dt>
         <dd class="invisible">At your nearest park office.</dd>
     </dl>
-<a href="#" class="link-toggle">Click here</a>
 <script>
 
     $('.link-toggle').click(function (event) {
         event.preventDefault();
         $('dd').toggleClass('invisible');
+    });
+
+    $('dt').click(function () {
+        $(this).css('color', 'red')
     });
 
 </script>
