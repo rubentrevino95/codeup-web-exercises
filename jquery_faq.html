@@ -7,11 +7,18 @@
         .invisible {
             visibility: hidden;
         }
+        .h3toggler {
+            display: none;
+        }
     </style>
     <script src="js/jquery-2.2.4.js"></script>
 </head>
 <body>
 <h1>jQuery faq Exercise</h1>
+<h2>Register to our site!</h2>
+<div id="newsletter">
+    <h1>Would you like to sign up for our newsletter? <span>X</span></h1>
+</div>
 <a href="#" class="link-toggle">Click here for answers</a>
     <dl>
         <dt>How big are national parks?</dt>
@@ -44,6 +51,35 @@
         <dt>Where can I get more information?</dt>
         <dd class="invisible">At your nearest park office.</dd>
     </dl>
+<br>
+
+    <a href="#" class="link-toggle2">Click here</a>
+
+    <h3>Yellowstone Park</h3>
+        <ul class="h3toggler">
+            <li>Big mountains.</li>
+            <li>Really cold.</li>
+            <li>Has volcano.</li>
+            <li>There's indians.</li>
+            <li>Has aliens.</li>
+        </ul>
+    <h3>Yosemite Park</h3>
+    <ul class="h3toggler">
+        <li>Really hot.</li>
+        <li>Lots of grass</li>
+        <li>Lots of animals</li>
+        <li>Goverment secrets</li>
+        <li>Cool landscapes</li>
+    </ul>
+    <h3>Big Canyon</h3>
+    <ul class="h3toggler">
+        <li>Very big.</li>
+        <li>Is really hot.</li>
+        <li>Lots of rocks</li>
+        <li>Can be dangerous.</li>
+        <li>More rocks.</li>
+    </ul>
+
 <script>
 
     $('.link-toggle').click(function (event) {
@@ -54,6 +90,33 @@
     $('dt').click(function () {
         $(this).css('color', 'red')
     });
+
+    // Traversing functions
+
+    $('.link-toggle2').click(function (event) {
+        event.preventDefault();
+
+        $('ul').each(function () {
+            $(this).children().last().css('background-color', '#FF0')
+        })
+    });
+
+    $('h3').click(function () {
+        $(this).next().children().css('font-weight','bold')
+        $(this).next().slideToggle();
+    });
+
+    $('h3').click(function () {
+        $(this).next().children().first().css('background','blue')
+    });
+
+    // Effects
+    // 1.
+    $('span').click(function () {
+        $('#newsletter').hide();
+    });
+    // 3.
+    $('h2').hide().delay().fadeIn(8000);
 
 </script>
 </body>
