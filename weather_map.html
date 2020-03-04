@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map</title>
+<!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--Mapbox CSS-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+<!--Direct styling-->
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            background: #2b2b2b;
+        }
+        nav {
+            grid-area: 1/1/2/11;
+        }
+        #nav-title {
+            font-size: 26px;
+        }
+        #card1 {
+            grid-area: 3/2/7/3;
+        }
+        #card2 {
+            grid-area: 3/4/7/6;
+        }
+        #card3 {
+            grid-area: 3/7/7/9;
+        }
+        #map {
+            grid-area: 8/2/13/9;
+        }
+    </style>
+</head>
+<body>
+<!--NAVBAR-->
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand" style="color: whitesmoke" href="#" id="nav-title">
+            <img src="img/cloud_white.png" width="40" height="40" class="d-inline-block" alt="">
+            Weather Map
+        </a>
+    </nav>
+<!--CARDS-->
+    <!--Card 1-->
+    <div class="card text-white bg-dark mb-3" style="width: 18rem;" id="card1">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">This will display the daily weather.</p>
+        </div>
+    </div>
+    <!--Card 2-->
+    <div class="card text-white bg-dark mb-3" style="width: 18rem;" id="card2">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">This will display tomorrows weather.</p>
+        </div>
+    </div>
+    <!--Card 3-->
+    <div class="card text-white bg-dark mb-3" style="width: 18rem;" id="card3">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">This will display the day after tomorrows weather.</p>
+        </div>
+    </div>
+
+<!--MAP-->
+    <div id='map' style='width: 1150px; height: 400px;'></div>
+
+<!--JS links-->
+<script src="js/keys.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+
+<!--JS work-->
+<script>
+// Darksky API
+    var data = $.ajax("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/"+ darkSkyKey);
+
+    $.ajax("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/"+ darkSkyKey +"/37.8267,-122.4233").done(function (data) {
+        console.log(data);
+        console.log(new Date(data.currently.time * 1000));
+    });
+
+
+// MAPBOX API
+    mapboxgl.accessToken = mapboxToken;
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/navigation-guidance-night-v4'
+    });
+
+
+
+</script>
+</body>
+</html>
+
+<!--Get weather for daily day-->
+<!--Use different icons to display with the weather-->
+<!--then get weather for next 2 days-->
+<!--display map to update weather with draggable marker-->
