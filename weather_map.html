@@ -28,6 +28,9 @@
         #nav-title {
             font-size: 26px;
         }
+        #location {
+            color: white;
+        }
         .card-group {
             grid-area: 3/2/9/9;
             border-radius: 25px;
@@ -193,7 +196,7 @@
             $("#weather").html(weatherConditions);
         });
 
-
+// Marker sets long and lat here
         function markerDrag() {
             var coordinates = marker.getLngLat();
             var latitude = coordinates.lat.toString();
