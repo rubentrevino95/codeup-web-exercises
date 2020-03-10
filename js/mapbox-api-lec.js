@@ -37,7 +37,7 @@ var markerOptions = {
     color: "red",
     draggable: true,
     anchor: "bottom",
-}
+};
 
 var marker = new mapboxgl.Marker(markerOptions)
     .setLngLat([-98.486209, 29.426007])
