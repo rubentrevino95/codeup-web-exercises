@@ -70,8 +70,6 @@ const users = [
 // 6. Use .reduce to get the list of user's names in a single string. Example: Your instructors are: ryan, luis, zach, fernando, justin.
 
     let names = users.reduce((sentence, user) => sentence === '' ? user.name : sentence + ', ' + user.name, '');
-
-
     console.log(names);
 
 
