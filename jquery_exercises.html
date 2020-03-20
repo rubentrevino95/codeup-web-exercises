@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Curriculum Code Sample</title>
+    <script src="js/jquery-2.2.4.js"></script>
+    <link rel="stylesheet" href="css/animations-template.css">
+</head>
+<body>
+
+<h1>Example Page</h1>
+<div class="important headShake">
+    <h3>NOTICE</h3>
+    <p id="p-style2">This is an important message!</p>
+</div>
+<div class="not-important slideInRight">
+    <h2>Lorem Ipsum</h2>
+    <p id="p-style">Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.</p>
+</div>
+<p class="important">This is also very important.</p>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ul>
+
+<!-- INSERT HTML CODE SAMPLE HERE -->
+<script type="text/javascript">
+
+    // $(document).ready(function() {
+    //     alert( 'The DOM has finished loading!' );
+    // });
+
+    // Mouse Events
+
+   $('h1').click(function () {
+        $(this).css('background','red');
+   });
+
+    $('p').dblclick(function () {
+        $('p').css('font-size','30px');
+    });
+
+    $('h2').hover(
+        function () {
+        $(this).css('color','red','font-family','comic sans ms');
+    },
+        function () {
+        $(this).css('color','blue');
+        }
+    );
+
+    $('h3').hover(
+        function () {
+            $(this).css('color','red','font-family','comic sans ms');
+        },
+        function () {
+            $(this).css('color','blue');
+        }
+    );
+
+    // Hover will need to functions for hover in and hover out
+    $('li').hover(
+        function () {
+        $(this).css('color','red');
+    },
+        function () {
+        $(this).css('color','black');
+        }
+    );
+
+    $('p').hover(
+        function () {
+            $(this).css('transform','scale(1.5)');
+        },
+        function () {
+            $(this).css('transform','scale(1)');
+        }
+    );
+
+</script>
+</body>
